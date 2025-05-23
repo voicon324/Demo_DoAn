@@ -1,0 +1,9 @@
+streamlit
+pymilvus
+sentence-transformers
+torch
+numpy
+Pillow
+requests
+hf_xet
+open_clip_torch

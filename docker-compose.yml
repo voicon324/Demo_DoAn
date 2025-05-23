@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+      # - ./local_images:/app/local_images
+      - ./local_embeddings:/app/local_embeddings
+      - ./data:/app/data
+      - ./manual_data:/app/manual_data
+      - F:/keyframes:/app/local_images
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 'all'
+              capabilities: [gpu]
+    networks:
+      - milvus
+
+networks:
+  milvus:
+    external: true

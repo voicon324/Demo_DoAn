@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env/
+
+# Streamlit
+.streamlit/
+
+# Local embeddings and images (if you decide not to commit them)
+# local_images/
+# local_embeddings/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+KaggleDeployment.ipynb
+
+volumes
+all_dbs_data
+manual_data
+data
