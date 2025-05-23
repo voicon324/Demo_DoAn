@@ -24,7 +24,7 @@ Dự án này cung cấp:
 
 1. Clone repository:
 ```bash
-git clone [URL của repository của bạn]
+git clone https://github.com/voicon324/Demo_DoAn.git
 cd Demo_DoAn
 ```
 
